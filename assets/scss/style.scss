@@ -1,0 +1,494 @@
+//FontFamly=======================
+$roboto: 'Roboto', 'sans-serif';
+$lato: 'Lato', 'sans-serif';
+$pt-sans: 'PT Sans', 'sans-serif';
+
+//Colors===========================
+$primary : #135893;
+$secondary : #f4f9ff;
+$orange : #ed8900;
+$lightorange : #FFA800;
+$darkblue: #0b3355;
+$white : #ffffff;
+$grey : rgb(165, 165, 165);
+$lightgrey :rgb(233, 233, 233);
+
+
+@import 'reset';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $roboto;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.ratings{
+    color: $lightgrey;
+    font-size: 14px;
+    padding: 10px 0 5px 0;
+    .active{
+        color: $lightorange;
+    }
+    .review{
+        color: #000;
+        font-weight: 700;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+
+@mixin border_bottom {
+    border: 2px solid $primary;
+     margin: 20px  0;
+    width: 25%;
+}
+
+@mixin button1{
+ color: $white;
+ background-color: $primary;
+ font-size: 22px;
+ font-weight: 500;
+ border-radius: 5px;
+ margin-top: 15px;
+ padding: 12px 30px;
+    
+
+}
+
+/*=========SERVICES CARD=========*/
+@mixin service_card {
+    text-align: center;
+    border: 1px solid $lightgrey;
+    padding: 20px 0px ;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px $lightgrey;
+
+    a{
+        color: $primary;
+        font-weight: 500;
+    }
+
+}
+
+/*=========================MAIN: NAVIGATION & HERO  ====================================*/
+#main{
+    position: relative;
+    background: url('../img/hero-01.png');
+    background-size: 50% 80%;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-color: $darkblue;
+    height: 90vh;
+    color: $white;
+    .navbar-brand{
+        color: $white;
+    }
+    .navbar-nav{
+        padding: 10px 0;
+        margin-left: auto;
+        .nav-item{
+            a{
+                background-color: $white;
+                border-radius: 4px;
+                padding: 8px 16px;
+                font-size: 14px;
+                color: $primary;
+            }
+        }
+        .nav-item:not(:last-child){
+            margin-right: 10px;
+        }
+        .dropdown-menu{
+            .dropdown-item{
+                color: $primary;
+            }
+        }
+    }
+    .hero-content{
+        margin-top: 10%;
+        .head{
+            margin-bottom: 15px;
+        }
+        .head-description{
+            font-weight: 600;
+        }
+        .input-group{
+            margin: 20px 0 30px 0;
+            .form-control{
+                border: none;
+                padding: 0.75rem .75rem;
+            }
+            .input-group-text {
+                background-color: $white;
+                border:0;
+                color: $grey;
+                padding-right: 20px;
+               
+            }
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+         
+          }
+          .serv{
+              left: 50px;
+          }
+        .dropbtn {
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            img{
+                margin-right: 4px;
+            }
+            i{
+                margin-left: 5px;
+                
+            }
+          
+          }        
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: $white;
+            min-width: 160px;
+            border-radius: 4px;
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: #000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .dropdown:hover .dropdown-content {display: block;}
+                 
+
+    }
+}
+
+
+
+/*=========================BUSINESS ONLINE====================================*/
+#businessonline{
+    background-color: $secondary;
+    .border-bottom{
+        @include border_bottom();
+        width: 10%;
+    }
+    .heading{
+        padding-bottom: 0;
+    }
+    .heading-info{
+        font-size: 18px;
+    }
+    .business-content{
+        .info-image{
+            background-color: $white;
+            height: 100px;
+            width: 125px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            display: flex;
+            border: 1px solid $lightgrey;
+            box-shadow: 3px 2px 4px $lightgrey;
+            img {
+                max-height: 100%;
+                max-width: 80%;
+            }
+
+        }
+        .info-content{
+            .info-head{
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $primary;
+                font-weight: 600;
+                margin-top: 30px;
+            }
+            p{
+                color: $grey;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 5px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+/*=========================DISCOVER SOFTWARE====================================*/
+#discover{
+    .banner-content{
+        background: url('../img/banner_01.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 250px;
+        color: $white;
+        h3{
+            padding: 40px 35px 10px 35px;
+          
+            
+        }
+        .btn{
+            @include button1();
+            background-color: $white;
+            color: $primary;
+            padding: 3px 20px;
+            font-size: 20px;
+            margin: 20px 35px;
+
+        }
+        span{
+            margin-left: 5px;
+        }
+    }
+
+    .slider-item{
+        .carousel-control-prev-icon,.carousel-control-next-icon{
+            color:#000;
+            border: 2px solid $white;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            padding: 10px;
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+/*==============================REQUEST CALL    =================================*/
+#request_call{
+    background-color: $primary;
+    color: $white;
+    h4{
+        margin-bottom: 10px;
+    }
+    .btn{
+        color: $white;
+        border-radius: 0;
+        padding: 10px 35px;
+        font-size: 16px;
+        background-color: $orange;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+/*=========================REVIEWS====================================*/
+#reviews{
+    background-color: $secondary;
+    padding: 40px 0;
+    .review-images{
+        position: relative;
+        min-height: 407px;
+        padding-top: 40px;
+        .back-image{
+            width: 398px;
+            height: 279px;
+            margin-top: -25px;
+        }
+        
+        .front-image{
+                position: absolute;
+                width: 398px;
+                height: 322px;
+                top: 24%;
+                left: 20%;
+            
+        }
+    }
+
+    .review-info{
+        margin-top: 30px;
+        .review-title{
+            border-bottom: 1px solid $grey;
+            text-transform: capitalize;
+            width: fit-content;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 19px;
+            margin: 20px 0;
+            line-height: 1.8em;
+            span{
+                font-weight: 500;
+            }
+        }
+        .btn{
+            @include button1();
+        }
+    }
+
+}
+
+
+
+/*==============================TOP SERVICES=================================*/
+#services{
+    .border-bottom{
+        @include border_bottom();
+        
+    }
+    .heading{
+        padding-bottom: 0;
+    }
+    h5{
+        text-align: right;
+        a{
+            color: $primary;
+            font-weight: 500;    
+        }
+    }
+    .list-group{
+        .list-group-item{
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            &.active{
+                background-color: $white;
+                color: $primary;
+                border: 2px solid $primary;
+                border-radius: 4px
+            }
+
+            }
+            a{
+                margin-bottom: 4px;
+                &:hover{
+                    background-color: $white;
+                    color: #000;
+                }
+        }
+    }
+    .card{
+        @include service_card();
+        margin-top: 20px;
+        img{
+            max-width: 30%;
+        }
+        .service-title{
+            color: $primary;
+            font-weight: 500;
+
+        }
+    }
+
+}
+
+
+/*==============================SUCCESS STORIES=================================*/
+#stories{
+    background-color: $secondary;
+    .story-info{
+        margin-bottom: 20px;
+        .border-bottom{
+            @include border_bottom();
+        }
+        .author-designation{
+            font-size: 14px;
+            color:$grey;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+/*===============================ARTICLE=====================================*/
+#article{
+    .card{
+        margin-bottom: 20px;
+        .card-title{
+            font-size: 14px;
+            line-height: 1.2rem;
+            color: $primary;
+        }
+        .card-date{
+            font-size: 12px;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+    }
+
+}
+
+
+/*===============================MEGAFOOTER======================================*/
+#footer{
+    background-color: $primary;
+    color:$white;
+    padding: 30px 0;
+    .footer-head{
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        span{
+            border-bottom: 1px solid;
+        }
+    }
+    ul{
+        li{
+            line-height:2rem;
+            font-size: 14px;
+            a{
+                color: $white;
+            }
+            .highlight{
+                background-color: $orange;
+                padding: 4px 7px;
+                border-radius: 4px;
+            }
+            .flags{
+                display: inline;
+                a{
+                    cursor: pointer;
+                    background-color: $white;
+                   
+                    img{
+                        width: 15%;
+                        display: inline;
+                        
+                    }
+                }
+            }
+        }
+        .social-media{
+            font-size: 12px;
+            .social-links{
+                background-color: white;
+                color: $primary;
+                padding: 6px 8px;
+                border-radius: 50%;
+                margin-right: 4px;
+            }
+            .fa-facebook-f{
+                padding: 1px 2px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,494 @@
+/*==============================
+        RESET CSS
+=================================*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Roboto", "sans-serif";
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.ratings {
+  color: #e9e9e9;
+  font-size: 14px;
+  padding: 10px 0 5px 0;
+}
+.ratings .active {
+  color: #FFA800;
+}
+.ratings .review {
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/*=========SERVICES CARD=========*/
+/*=========================MAIN: NAVIGATION & HERO  ====================================*/
+#main {
+  position: relative;
+  background: url("../img/hero-01.png");
+  background-size: 50% 80%;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #0b3355;
+  height: 90vh;
+  color: #ffffff;
+}
+#main .navbar-brand {
+  color: #ffffff;
+}
+#main .navbar-nav {
+  padding: 10px 0;
+  margin-left: auto;
+}
+#main .navbar-nav .nav-item a {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #135893;
+}
+#main .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+#main .navbar-nav .dropdown-menu .dropdown-item {
+  color: #135893;
+}
+#main .hero-content {
+  margin-top: 10%;
+}
+#main .hero-content .head {
+  margin-bottom: 15px;
+}
+#main .hero-content .head-description {
+  font-weight: 600;
+}
+#main .hero-content .input-group {
+  margin: 20px 0 30px 0;
+}
+#main .hero-content .input-group .form-control {
+  border: none;
+  padding: 0.75rem .75rem;
+}
+#main .hero-content .input-group .input-group-text {
+  background-color: #ffffff;
+  border: 0;
+  color: #a5a5a5;
+  padding-right: 20px;
+}
+#main .hero-content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#main .hero-content .serv {
+  left: 50px;
+}
+#main .hero-content .dropbtn {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#main .hero-content .dropbtn img {
+  margin-right: 4px;
+}
+#main .hero-content .dropbtn i {
+  margin-left: 5px;
+}
+#main .hero-content .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  border-radius: 4px;
+  z-index: 1;
+}
+#main .hero-content .dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#main .hero-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*=========================BUSINESS ONLINE====================================*/
+#businessonline {
+  background-color: #f4f9ff;
+}
+#businessonline .border-bottom {
+  border: 2px solid #135893;
+  margin: 20px  0;
+  width: 25%;
+  width: 10%;
+}
+#businessonline .heading {
+  padding-bottom: 0;
+}
+#businessonline .heading-info {
+  font-size: 18px;
+}
+#businessonline .business-content .info-image {
+  background-color: #ffffff;
+  height: 100px;
+  width: 125px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid #e9e9e9;
+  box-shadow: 3px 2px 4px #e9e9e9;
+}
+#businessonline .business-content .info-image img {
+  max-height: 100%;
+  max-width: 80%;
+}
+#businessonline .business-content .info-content .info-head {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #135893;
+  font-weight: 600;
+  margin-top: 30px;
+}
+#businessonline .business-content .info-content p {
+  color: #a5a5a5;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/*=========================DISCOVER SOFTWARE====================================*/
+#discover .banner-content {
+  background: url("../img/banner_01.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  color: #ffffff;
+}
+#discover .banner-content h3 {
+  padding: 40px 35px 10px 35px;
+}
+#discover .banner-content .btn {
+  color: #ffffff;
+  background-color: #135893;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #135893;
+  padding: 3px 20px;
+  font-size: 20px;
+  margin: 20px 35px;
+}
+#discover .banner-content span {
+  margin-left: 5px;
+}
+#discover .slider-item .carousel-control-prev-icon, #discover .slider-item .carousel-control-next-icon {
+  color: #000;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+}
+
+/*==============================REQUEST CALL    =================================*/
+#request_call {
+  background-color: #135893;
+  color: #ffffff;
+}
+#request_call h4 {
+  margin-bottom: 10px;
+}
+#request_call .btn {
+  color: #ffffff;
+  border-radius: 0;
+  padding: 10px 35px;
+  font-size: 16px;
+  background-color: #ed8900;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/*=========================REVIEWS====================================*/
+#reviews {
+  background-color: #f4f9ff;
+  padding: 40px 0;
+}
+#reviews .review-images {
+  position: relative;
+  min-height: 407px;
+  padding-top: 40px;
+}
+#reviews .review-images .back-image {
+  width: 398px;
+  height: 279px;
+  margin-top: -25px;
+}
+#reviews .review-images .front-image {
+  position: absolute;
+  width: 398px;
+  height: 322px;
+  top: 24%;
+  left: 20%;
+}
+#reviews .review-info {
+  margin-top: 30px;
+}
+#reviews .review-info .review-title {
+  border-bottom: 1px solid #a5a5a5;
+  text-transform: capitalize;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+#reviews .review-info p {
+  font-size: 19px;
+  margin: 20px 0;
+  line-height: 1.8em;
+}
+#reviews .review-info p span {
+  font-weight: 500;
+}
+#reviews .review-info .btn {
+  color: #ffffff;
+  background-color: #135893;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 12px 30px;
+}
+
+/*==============================TOP SERVICES=================================*/
+#services .border-bottom {
+  border: 2px solid #135893;
+  margin: 20px  0;
+  width: 25%;
+}
+#services .heading {
+  padding-bottom: 0;
+}
+#services h5 {
+  text-align: right;
+}
+#services h5 a {
+  color: #135893;
+  font-weight: 500;
+}
+#services .list-group .list-group-item {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+#services .list-group .list-group-item.active {
+  background-color: #ffffff;
+  color: #135893;
+  border: 2px solid #135893;
+  border-radius: 4px;
+}
+#services .list-group a {
+  margin-bottom: 4px;
+}
+#services .list-group a:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+#services .card {
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  padding: 20px 0px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #e9e9e9;
+  margin-top: 20px;
+}
+#services .card a {
+  color: #135893;
+  font-weight: 500;
+}
+#services .card img {
+  max-width: 30%;
+}
+#services .card .service-title {
+  color: #135893;
+  font-weight: 500;
+}
+
+/*==============================SUCCESS STORIES=================================*/
+#stories {
+  background-color: #f4f9ff;
+}
+#stories .story-info {
+  margin-bottom: 20px;
+}
+#stories .story-info .border-bottom {
+  border: 2px solid #135893;
+  margin: 20px  0;
+  width: 25%;
+}
+#stories .story-info .author-designation {
+  font-size: 14px;
+  color: #a5a5a5;
+  text-transform: capitalize;
+}
+
+/*===============================ARTICLE=====================================*/
+#article .card {
+  margin-bottom: 20px;
+}
+#article .card .card-title {
+  font-size: 14px;
+  line-height: 1.2rem;
+  color: #135893;
+}
+#article .card .card-date {
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+/*===============================MEGAFOOTER======================================*/
+#footer {
+  background-color: #135893;
+  color: #ffffff;
+  padding: 30px 0;
+}
+#footer .footer-head {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#footer .footer-head span {
+  border-bottom: 1px solid;
+}
+#footer ul li {
+  line-height: 2rem;
+  font-size: 14px;
+}
+#footer ul li a {
+  color: #ffffff;
+}
+#footer ul li .highlight {
+  background-color: #ed8900;
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+#footer ul li .flags {
+  display: inline;
+}
+#footer ul li .flags a {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+#footer ul li .flags a img {
+  width: 15%;
+  display: inline;
+}
+#footer ul .social-media {
+  font-size: 12px;
+}
+#footer ul .social-media .social-links {
+  background-color: white;
+  color: #135893;
+  padding: 6px 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+#footer ul .social-media .fa-facebook-f {
+  padding: 1px 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
